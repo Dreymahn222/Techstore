@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Search — GameHub</title>
+<link rel="stylesheet" href="assets/styles.css"></head>
+<body>
+<header class="container header"><div class="logo"><a href="index.html">GameHub</a></div><button class="hamburger" aria-label="Toggle menu">&#9776;</button></header>
+
+<main class="container">
+  <form data-search><input name="q" class="input prefill" placeholder="Search games, gear..." aria-label="Search"></form>
+
+  <div style="margin-top:12px" id="results">
+    <div class="kicker">Search Results</div>
+    <div class="p-muted" style="margin-top:8px">No results found for your query. Try a different keyword.</div>
+  </div>
+</main>
+
+<footer class="container footer"><div class="links"><a href="index.html">Home</a></div><div class="p-muted">© <span id="year13"></span> GameHub</div></footer>
+<script src="assets/script.js"></script>
+<script>document.getElementById('year13').textContent=new Date().getFullYear();</script>
+</body>
+</html>
