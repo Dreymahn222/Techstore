@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — GameHub</title>
+<link rel="stylesheet" href="assets/styles.css"></head>
+<body>
+<header class="container header"><div class="logo"><a href="index.html">GameHub</a></div><button class="hamburger" aria-label="Toggle menu">&#9776;</button></header>
+
+<main class="container">
+  <h1 class="h4">Contact Us</h1>
+  <p class="p-muted">Questions, partnership inquiries or press — get in touch.</p>
+
+  <form style="margin-top:12px" class="form" action="#" method="post" onsubmit="alert('Demo form submitted');return false">
+    <div class="form-row"><label class="kicker">Name</label><input class="input" name="name" required></div>
+    <div class="form-row"><label class="kicker">Email</label><input class="input" name="email" type="email" required></div>
+    <div class="form-row"><label class="kicker">Message</label><textarea class="input" name="message" rows="5" required></textarea></div>
+    <div style="margin-top:8px"><button class="btn btn-primary" type="submit">Send Message</button></div>
+  </form>
+</main>
+
+<footer class="container footer"><div class="links"><a href="index.html">Home</a></div><div class="p-muted">© <span id="year12"></span> GameHub</div></footer>
+<script src="assets/script.js"></script>
+<script>document.getElementById('year12').textContent=new Date().getFullYear();</script>
+</body>
+</html>
